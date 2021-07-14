@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+/* ==================
+        RESET
+===================== */
+* {margin: 0; padding: 0;}
+ul, li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: #333333;}
+
+/* ==================
+        DEFAULT
+===================== */
+body {font-family: "Nanum Gothic", sans-serif;}
+#wrap {width: 100%; margin: 0 auto; position: relative;}
+.inner {width: 1170px; margin: 0 auto;}
+
+/* ==================
+        QUICKMENU
+===================== */
+#quickmenu {position: absolute; top: 100px; left: 88.1%; z-index: 99999;}
+#quickmenu .bg {width: 84px; height: 388px;}
+#quickmenu img.quick1 {position: absolute; top: 4px; left: 4px;}
+#quickmenu img.quick2 {position: absolute; top: 80px; left: 4px;}
+#quickmenu img.quick3 {position: absolute; top: 156px; left: 4px;}
+#quickmenu img.quick4 {position: absolute; top: 232px; left: 4px;}
+#quickmenu img.quick5 {position: absolute; top: 308px; left: 4px;}
+#quickmenu p {text-align: center; font-size: 13px; color: #E60314;}
+#quickmenu p.quick1 {position: absolute; top: 50px; left: 29px;}
+#quickmenu p.quick2 {position: absolute; top: 125px; left: 29px;}
+#quickmenu p.quick3 {position: absolute; top: 200px; left: 29px;}
+#quickmenu p.quick4 {position: absolute; top: 275px; left: 24px;}
+#quickmenu p.quick5 {position: absolute; top: 350px; left: 24px;}
+#quickmenu .quick1:hover,
+#quickmenu .quick2:hover,
+#quickmenu .quick3:hover,
+#quickmenu .quick4:hover,
+#quickmenu .quick5:hover {font-weight: bold;}
+
+/* ==================
+        HEADER
+===================== */
+header {width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 999; background: #FFF; opacity: 0.9;}
+header .inner {width: 1170px; height: 100px;}
+header .logo {width: 20%; height: 100px; float: left;}
+header .logo a img {margin-top: 15px; display: block;}
+header .logo a img:hover {opacity:  0.7;}
+header .menu {width: 80%; height: 100px; float: left; display: block; position: relative;}
+header .menu nav {width: 100%; position: absolute; top: 20px; right: 0; z-index: 999;}
+header .menu ul li {float: left; width: 20%;}
+header .menu ul li a {height: 60px; line-height: 60px; display: block; font-size: 18px; text-align: center; color: #E60314;}
+header .menu ul li a:hover {background: #E60314; color: #FFF; font-weight: bold;}
+header .menu ul li .submenu {display: none;}
+header .menu ul li .submenu li {width: 100%;}
+header .menu ul li .submenu li a {display: block; background: #E60314; color: #FFF; font-size: 15px;  height: 60px; line-height: 60px;}
+header .menu ul li .submenu li a:hover {background: #FFF; color: #E60314; font-weight: bold; opacity: 0.9;}
+
+/* ==================
+        SWIPE
+===================== */
+#section {width: 100%; height: 720px; min-width: 1170px;}
+#section .swipe {width: 100%; overflow: hidden; position: relative; top: 100px;}
+#section .swipe .sliderlist img {width: 100%;}
+#section .swipe .sliderlist li {float: left; width: 100%; position: relative;}
+#section .swipe .btn {position: absolute; top: 43%; width: 100%;}
+#section .swipe .btn button {width: 10%; border: 0; background: rgba(0,0,0,0);}
+#section .swipe .btn .prev {position: absolute; left: -1.5%;}
+#section .swipe .btn .next {position: absolute; left: 91.5%;}
+#section .swipe .btn img {width: 40%; opacity: 0.5; cursor: pointer;}
+#section .swipe .btn:hover {opacity: 0.7;}
+
+/* ==================
+        CON1
+===================== */
+#section .con .con1 {width: 100%; height: 1185px;}
+#section .con .con1 .inner {width: 1170px; height: 1185px;}
+#section .con .con1 .text {text-align: center; margin-top: 95px; margin-bottom: 100px; padding-top: 40px;}
+#section .con .con1 .text h1 {font-size: 32px; padding: 20px; padding-top: 60px;}
+#section .con .con1 .text h1 strong {color: #E60314;}
+#section .con .con1 .text p {font-size: 20px;}
+#section .con .con1 ul {display: flex; justify-content:space-between}
+#section .con .con1 ul li {border: 2px solid #E0E0E0; text-align: center; padding: 20px;}
+#section .con .con1 ul li h2 {padding: 26.25px; font-size: 24px;}
+#section .con .con1 ul li p {padding: 26.25px; font-size: 16px;}
+#section .con .con1 ul li:hover {cursor: pointer; box-shadow: 5px 5px 5px #E60314;}
+#section .con .con1 ul li:hover h2 {color: #E60314;}
+#section .con .con1 .second {margin-top: 25px;}
+
+/* ==================
+        CON2
+===================== */
+#section .con .con2 {width: 100%; height: 1010px; float: left;}
+#section .con .con2 {background: url("../images/contents/con_0200_bg.jpg") no-repeat center/cover; position: relative; z-index: -2;}
+#section .con .con2 .inner {width: 1170px; height: 1010px;}
+#section .con .con2 .text {padding: 40px; text-align: center; padding-top: 80px; margin-bottom: 60px;}
+#section .con .con2 .text h1 {font-size: 32px; padding: 20px; color: #FFF; font-weight: normal;}
+#section .con .con2 .text h1 strong {color: #FFF;}
+#section .con .con2 .text p {font-size: 18px; color: #FFF;}
+#section .con .con2 .gallery {width: 1132px;  height: 355px; position: relative; margin: 0 auto;}
+#section .con .con2 .gallery .photo img {width: 323px; height: 355px; border-top-left-radius: 40px;}
+#section .con .con2 .gallery .photo {position: relative; height: 355px;}
+#section .con .con2 .gallery .photo li {position: absolute;}
+#section .con .con2 .gallery .photo li.on {z-index: 1;}
+#section .con .con2 .gallery .thum a img {width: 100%;}
+#section .con .con2 .gallery .description h2 {font-size: 25px; margin-left: 60px;}
+#section .con .con2 .gallery .description p.title {margin-left: 60px;}
+#section .con .con2 .gallery .description p {padding-top: 10px;}
+#section .con .con2 .gallery .description .title {color: #FFF;}
+#section .con .con2 .gallery .description .bg {
+        width: 1132px; height: 355px; 
+        background: #DDD; opacity: 0.2; 
+        border-top-right-radius: 40px; border-top-left-radius: 40px;
+        position: absolute; top: 0; left: 0; z-index: -1;
+}
+#section .con .con2 .gallery .description .description08 {width: 769px; height: 355px; position: absolute; top: 30px; left: 325px;}
+#section .con .con2 .gallery .description .description01, 
+#section .con .con2 .gallery .description .description02, 
+#section .con .con2 .gallery .description .description03, 
+#section .con .con2 .gallery .description .description04, 
+#section .con .con2 .gallery .description .description05, 
+#section .con .con2 .gallery .description .description06, 
+#section .con .con2 .gallery .description .description07 {width: 769px; height: 355px; position: absolute; top: 30px; left: 325px; display: none;}
+#section .con .con2 .gallery .description .description01 ul,
+#section .con .con2 .gallery .description .description02 ul,
+#section .con .con2 .gallery .description .description03 ul, 
+#section .con .con2 .gallery .description .description04 ul, 
+#section .con .con2 .gallery .description .description05 ul, 
+#section .con .con2 .gallery .description .description06 ul, 
+#section .con .con2 .gallery .description .description07 ul, 
+#section .con .con2 .gallery .description .description08 ul {margin-left: 30px; display: flex; justify-content:space-around}
+#section .con .con2 .gallery .description .description01 li,
+#section .con .con2 .gallery .description .description02 li, 
+#section .con .con2 .gallery .description .description03 li, 
+#section .con .con2 .gallery .description .description04 li, 
+#section .con .con2 .gallery .description .description05 li, 
+#section .con .con2 .gallery .description .description06 li, 
+#section .con .con2 .gallery .description .description07 li, 
+#section .con .con2 .gallery .description .description08 li {
+        width: 185px; height: 175px; background: #FFF;
+        border-radius: 20px; text-align: center; padding-top: 20px; margin-top: 35px;
+}
+#section .con .con2 .gallery .description .description01 img,
+#section .con .con2 .gallery .description .description02 img,
+#section .con .con2 .gallery .description .description03 img,
+#section .con .con2 .gallery .description .description04 img,
+#section .con .con2 .gallery .description .description05 img,
+#section .con .con2 .gallery .description .description06 img,
+#section .con .con2 .gallery .description .description07 img,
+#section .con .con2 .gallery .description .description08 img {width: 70px; height: 70px;}
+#section .con .con2 .gallery .description button {
+        margin: 15px 10px; padding: 5px; 
+        border: 1px solid #DDD; border-radius: 10px; background: #FFF;
+}
+#section .con .con2 .gallery .prevbtn,
+#section .con .con2 .gallery .nextbtn {
+        display: block; 
+        text-indent: -999px;
+        font-size: 0;
+        width: 50px; height: 50px;
+}
+#section .con .con2 .gallery .prevbtn {z-index: 2; position: absolute; top: 420px; left: -19px; background: url("../images/contents/con_0200_prevbtn.png")no-repeat;}
+#section .con .con2 .gallery .nextbtn {z-index: 2; position: absolute; top: 420px; left: 1132px; background: url("../images/contents/con_0200_nextbtn.png")no-repeat;}
+#section .con .con2 .gallery .prevbtn:hover,
+#section .con .con2 .gallery .nextbtn:hover {opacity: 0.7;}
+#section .con .con2 .gallery .leftbtn,
+#section .con .con2 .gallery .rightbtn {
+        width: 200px; height: 50px; line-height: 50px; 
+        background: #FFF; border-radius: 20px; 
+        font-size: 15px; text-align: center; font-weight: bold;
+}
+#section .con .con2 .gallery .leftbtn {position: absolute; top: 600px; left: 257px;}
+#section .con .con2 .gallery .rightbtn {position: absolute; top: 600px; left: 665px;}
+#section .con .con2 .gallery .leftbtn:hover,
+#section .con .con2 .gallery .rightbtn:hover {cursor: pointer; box-shadow: 5px 5px 5px #E60314; color: #E60314;}
+
+/* ==================
+        CON3
+===================== */
+#section .con .con3 {width: 100%; height: 1074px; float: left;}
+#section .con .con3 {background: url("../images/contents/con_0300_bg.jpg") no-repeat center/cover;}
+#section .con .con3 .inner {width: 1170px; height: 1072px;}
+#section .con .con3 .title {padding-top: 100px; text-align: center;}
+#section .con .con3 .title h1 {font-size: 32px; padding-bottom: 30px; font-weight: normal;}
+#section .con .con3 .leftbtn,
+#section .con .con3 .midbtn,
+#section .con .con3 .rightbtn {
+        width: 200px; height: 50px; line-height: 50px; 
+        background: #FFF; border-radius: 20px; 
+        font-size: 15px; text-align: center; font-weight: bold;
+        padding: 20px;
+}
+#section .con .con3 .leftbtn:hover,
+#section .con .con3 .midbtn:hover,
+#section .con .con3 .rightbtn:hover {cursor: pointer; box-shadow: 5px 5px 5px #E60314; color: #E60314;}
+#section .con .con3 .btn {display: flex; justify-content: space-evenly; width: 800px; margin: 30px 0 60px 180px;}
+#section .con .con3 .first {display: flex; justify-content: space-between; margin-bottom: 20px;}
+#section .con .con3 .second {display: flex; justify-content: space-between;}
+#section .con .con3 .text {text-align: center; padding-top: 20px; padding-bottom: 30px;}
+#section .con .con3 .text p {padding-top: 10px;}
+#section .con .con3 .first li {background: #FFF;}
+#section .con .con3 .second li {background: #FFF;}
+#section .con .con3 .first li:hover, 
+#section .con .con3 .second li:hover {cursor: pointer; box-shadow: 5px 5px 5px #E60314;}
+#section .con .con3 ul li:hover h2 {color: #E60314;}
+
+/* ==================
+        CON4
+===================== */
+#section .con .con4 {width: 100%; height: 1197px; float: left;}
+#section .con .con4 .inner {width: 1170px; height: 1197px; background: pink; opacity: 0.3;}
+
+/* ==================
+        CON5
+===================== */
+#section .con .con5 {width: 100%; height: 260px; margin-top: 40px; float: left;}
+#section .con .con5 .inner {width: 1170px; height: 260px;}
+#section .con .con5 .notice {width: 48.6%; height: 260px; float: left; border: 2px solid #E0E0E0;}
+#section .con .con5 .notice h2 {padding: 10px;}
+#section .con .con5 .notice li {line-height: 49px; border-bottom: 1.5px dotted #DDD;}
+#section .con .con5 .notice li a {padding-left: 5px; font-size: 15px;}
+#section .con .con5 .notice li a:hover {color: #E60314;}
+#section .con .con5 .notice li span {float: right; padding-right: 5px; font-size: 11px;}
+#section .con .con5 .banner {width: 49%; height: 260px; float: right; }
+#section .con .con5 .banner img {width: 100%; height: 260px;}
+#section .con .con5 .banner img:hover {box-shadow: 5px 5px 5px #E60314;}
+
+/* ==================
+        FOOTER
+===================== */
+footer .fzone {width: 100%; height: 200px; float: left;}
+footer .fzone .ftop {width: 100%; height: 100px; line-height: 100px; float: left;}
+footer .fzone .ftop .bmenu {width: 74.5%; height: 100px; float: left;}
+footer .fzone .ftop .bmenu ul {display: flex; justify-content: space-between;}
+footer .fzone .ftop .bmenu ul li a:hover {color: #E60314;}
+footer .fzone .ftop .bmenu ul li .info {color: #E60314;}
+footer .fzone .ftop .bmenu ul li .info:hover {opacity: 0.7;}
+footer .fzone .ftop .sns {width: 25.5%; height: 100px; float: left;}
+footer .fzone .ftop .sns ul li {float: right; margin-left: 10px; margin-top: 12px;}
+footer .fzone .ftop .sns ul li:hover {opacity: 0.7;}
+footer .fzone .fbottom {width: 100%; height: 100px; float: left; border-top: 1px solid #E60314;}
+footer .fzone .fbottom .blogo {width: 15%; height: 100px; float: left;}
+footer .fzone .fbottom .blogo a img {margin-top: 25px;}
+footer .fzone .fbottom .blogo a img:hover {opacity: 0.7;}
+footer .fzone .fbottom .copyright {width: 59.5%; height: 100px; float: left;}
+footer .fzone .fbottom .copyright {margin-top: 15px; font-size: 15px; color: #333}
+footer .fzone .fbottom .copyright ul {display: flex; justify-content:space-between}
+footer .fzone .fbottom .copyright ul li {line-height: 1.5;}
+footer .fzone .fbottom .copyright p {font-size: 13px; margin-top: 10px; color: #333;}
+footer .fzone .fbottom .copyright p span {color: #E60314;}
+footer .fzone .fbottom .copyright p span:hover {cursor: pointer; font-weight: bold;}
+footer .fzone .fbottom .fs {width: 25.5%; height: 100px; float: left;}
+footer .fzone .fbottom .fs select {float: right; margin-top: 37px; padding: 3px;}
